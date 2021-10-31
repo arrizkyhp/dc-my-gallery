@@ -15,7 +15,7 @@
 }
 
 body {
-  width: 100%;
+  /* width: 100%; */
   max-width: 1100px;
   margin: 0 auto;
   font-family: var(--font-montserrat);
@@ -87,8 +87,6 @@ header section.profile-data .profile-card p.information {
   font-weight: 600;
   font-size: 14px;
   color: var(--color-gray-4);
-
-  text-transform: uppercase;
 }
 
 .gallery {
@@ -177,4 +175,53 @@ footer .attribution a {
 
 footer .attribution a:hover {
   color: var(--color-gray-2);
+}
+
+@media (max-width: 920px) {
+  body {
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 780px) {
+  .gallery {
+    margin-top: 52px;
+  }
+}
+
+@media (max-width: 440px) {
+  body {
+    padding: 0 12px;
+  }
+  header .profile img {
+    max-width: 100px;
+    margin-bottom: 12px;
+  }
+
+  header .profile h1.profile__name {
+    font-size: 14px;
+    /* margin-bottom: 4px; */
+  }
+
+  header .profile p.profile__place {
+    font-size: 10px;
+    margin-bottom: 12px;
+  }
+
+  header .profile section.profile-data {
+    grid-gap: 15px;
+  }
+
+  header section.profile-data .profile-card p.number {
+    font-size: 12px;
+  }
+
+  header section.profile-data .profile-card p.information {
+    font-size: 12px;
+  }
+
+  .gallery {
+    margin-top: 40px;
+    gap: 12px;
+  }
 }
