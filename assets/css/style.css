@@ -177,19 +177,19 @@ footer .attribution a:hover {
   color: var(--color-gray-2);
 }
 
-@media (max-width: 920px) {
+@media screen and (max-width: 920px) {
   body {
     padding: 0 20px;
   }
 }
 
-@media (max-width: 780px) {
+@media screen and (max-width: 780px) {
   .gallery {
     margin-top: 52px;
   }
 }
 
-@media (max-width: 440px) {
+@media screen and (max-width: 440px) {
   body {
     padding: 0 12px;
   }
